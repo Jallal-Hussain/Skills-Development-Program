@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Course } from "@/types/courseTypes";
-import { AcademicCapIcon } from "@heroicons/react/24/solid";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
-import { ClockIcon } from "@heroicons/react/24/solid";
-import { CurrencyDollarIcon } from "@heroicons/react/24/solid";
-import { UserGroupIcon } from "@heroicons/react/24/solid";
+import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import { ClockIcon } from "@heroicons/react/24/outline";
+import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { UserGroupIcon } from "@heroicons/react/24/outline";
+import CourseDetailsButton from "./CourseDetailsButton";
+import EnrollButton from "./enrollButton";
 
 interface CardProps {
   course: Course;
@@ -12,49 +13,54 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ course }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="bg-[#2A327D] rounded-lg shadow-lg overflow-hidden">
       {/* Course Image */}
-      <div className="relative h-52">
+      <div className="relative h-52 group mb-4">
         <Image
           src={course.image}
           alt={course.courseName}
           layout="fill"
           objectFit="cover"
-          className="w-full"
+          className="h-full transition duration-300 group-hover:scale-110"
         />
       </div>
       {/* Course Details */}
-      <div className="p-4 bg-[#2A327D]">
+      <div className="p-4 ">
         <h2 className="text-lg bg-white p-2 rounded-md font-bold text-center text-[#2A327D]">
           {course.courseName}
         </h2>
-        <ul className="grid grid-cols-2 gap-6 px-4 mt-4 space-y-2 text-sm text-gray-200">
-          <li className="flex items-center">
-            <UserGroupIcon className="w-5 h-5 text-white mr-2" />
-            {course.courseDetail.seats}
-          </li>
-          <li className="flex items-center">
-            <ClockIcon className="w-5 h-5 text-white mr-2" />
-            {course.courseDetail.duration}
-          </li>
-          <li className="flex items-center">
-            <AcademicCapIcon className="w-5 h-5 text-white mr-2" />
-            {course.courseDetail.certificate}
-          </li>
-          <li className="flex items-center">
-            <CurrencyDollarIcon className="w-5 h-5 text-white mr-2" />
-            {course.courseDetail.price}
-          </li>
-        </ul>
+        <div className="flex justify-center items-center border-b">
+          <ul className="grid grid-cols-2 gap-4 px-2 mt-4 text-sm text-gray-200">
+            <li className="flex items-center p-2">
+              <span className="bg-white p-1 rounded-full mr-2">
+                <UserGroupIcon className="w-5 h-5 text-[#2A327D] " />
+              </span>
+              {course.courseDetail.seats}
+            </li>
+            <li className="flex items-center p-2">
+              <span className="bg-white p-1 rounded-full mr-2">
+                <ClockIcon className="w-5 h-5 text-[#2A327D] " />
+              </span>
+              {course.courseDetail.duration}
+            </li>
+            <li className="flex items-center p-2">
+              <span className="bg-white p-1 rounded-full mr-2">
+                <AcademicCapIcon className="w-5 h-5 text-[#2A327D] " />
+              </span>
+              {course.courseDetail.certificate}
+            </li>
+            <li className="flex items-center p-2">
+              <span className="bg-white p-1 rounded-full mr-2">
+                <CurrencyDollarIcon className="w-5 h-5 text-[#2A327D] " />
+              </span>
+              {course.courseDetail.price}
+            </li>
+          </ul>
+        </div>
         {/* Buttons */}
         <div className="flex justify-between items-center mt-4 px-4">
-          <button className="text-sm px-4 py-2 bg-[#2A327D] text-white rounded shadow hover:bg-[#1d255f]">
-            Details
-          </button>
-          <button className="flex items-center text-sm px-4 py-2 bg-[#D0E23B] text-[#2A327D] rounded shadow hover:bg-[#c3d934]">
-            Enroll Now
-            <ChevronRightIcon className="w-4 h-4 ml-2" />
-          </button>
+          <CourseDetailsButton />
+          <EnrollButton />
         </div>
       </div>
     </div>
