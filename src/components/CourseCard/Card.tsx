@@ -4,8 +4,8 @@ import { AcademicCapIcon } from "@heroicons/react/24/outline";
 import { ClockIcon } from "@heroicons/react/24/outline";
 import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
 import { UserGroupIcon } from "@heroicons/react/24/outline";
-import CourseDetailsButton from "./CourseDetailsButton";
-import EnrollButton from "./enrollButton";
+import CourseDetailsButton from "@/components/CourseCard/CourseDetailsButton";
+import EnrollButton from "@/components/CourseCard/EnrollButton";
 
 interface CardProps {
   course: Course;

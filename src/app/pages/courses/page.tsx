@@ -1,4 +1,4 @@
-import Card from "@/components/card";
+import Card from "@/components/CourseCard/Card";
 import { coursesData } from "@/data/coursesData";
 import { Course } from "@/types/courseTypes";
 
