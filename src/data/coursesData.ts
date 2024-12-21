@@ -6,7 +6,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
@@ -17,7 +17,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "4 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3.5k",
     },
   },
@@ -28,7 +28,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
@@ -39,7 +39,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
@@ -50,7 +50,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
@@ -61,7 +61,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "2.5k",
     },
   },
@@ -72,7 +72,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
@@ -83,7 +83,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
@@ -94,7 +94,7 @@ export const coursesData = [
     courseDetail: {
       seats: "Limitted Seats",
       duration: "3 months",
-      certificate: "Certificate on Completion",
+      certificate: "Certificate of Completion",
       price: "3k",
     },
   },
